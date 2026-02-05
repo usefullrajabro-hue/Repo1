@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Surprise 🎂</title>
+
+<style>
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #8e44ad;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff4d6d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9184a;
+}
+
+#msg {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday Best Friend 🎉</h1>
+
+<img src="https://media.giphy.com/media/g5R9dok94mrIvplmZd/giphy.gif" width="250">
+
+<br><br>
+
+<button onclick="showMessage()">Click for Surprise 💖</button>
+
+<p id="msg"></p>
+
+<script>
+
+let messages = [
+"Happy Birthday! You are my best friend forever 💖",
+"May your day be filled with happiness and fun 🎂",
+"You make my life better just by being my friend 😊",
+"I’m lucky to have a friend like you 🌟",
+"May all your dreams come true 🎉"
+];
+
+function showMessage() {
+    let random = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById("msg").innerText = random;
+}
+
+</script>
+
+</body>
+</html>
